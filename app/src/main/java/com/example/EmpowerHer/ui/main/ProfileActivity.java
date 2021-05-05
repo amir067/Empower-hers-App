@@ -70,23 +70,15 @@ public class ProfileActivity extends AppCompatActivity {
 
     @BindView(R.id.profile_username)
     TextView profileUsername;
+
+    @BindView(R.id.profile_user_address)
+    TextView profileUserAddress;
+
+
     @BindView(R.id.profile_email)
     TextView profileEmail;
-    @BindView(R.id.profile_institute)
-    TextView profileInistitue;
-    @BindView(R.id.profile_class)
-    TextView profileClass;
-    @BindView(R.id.profile_stf_reg_no)
-    TextView profileStd_reg_no;
-
-    @BindView(R.id.profile_gender)
-    TextView profileGender;
 
 
-    @BindView(R.id.user_class_container)
-    CardView userClassCV;
-    @BindView(R.id.user_regno_container)
-    CardView userRegNoCV;
 
 
     private FirebaseAuth auth;
@@ -95,7 +87,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     private BottomSheetDialog bottomSheetDialog;
 
-    String age,email,gender,id,imageURL,password,phone,username;
+    String age,email,gender,id,imageURL,password,phone,username,address;
 
     private static final int STORAGE_PERMISSION_CODE = 123;
 
@@ -400,24 +392,12 @@ public class ProfileActivity extends AppCompatActivity {
                             profileEmail.setText(userObject.getEmail());
                             email=userObject.getEmail();
                         }
-                        if(!userObject.getSchool().isEmpty()){
-                            profileInistitue.setText(userObject.getSchool());
+
+                        if(!userObject.getAddress().isEmpty()){
+                            profileUserAddress.setText(userObject.getAddress());
+                            address=userObject.getAddress();
                         }
-                        if(!userObject.getStudentClass().isEmpty()){
-                            profileClass.setText(userObject.getStudentClass());
-                        }
-                        else{
-                            userClassCV.setVisibility(View.GONE);
-                        }
-                        if(!userObject.getGender().isEmpty()){
-                            profileGender.setText(userObject.getGender());
-                        }
-                        if(!userObject.getRegNo().isEmpty()){
-                            profileStd_reg_no.setText(userObject.getRegNo());
-                        }
-                        else{
-                            userRegNoCV.setVisibility(View.GONE);
-                        }
+
 
                         if(!userObject.getImageURL().isEmpty()){
 

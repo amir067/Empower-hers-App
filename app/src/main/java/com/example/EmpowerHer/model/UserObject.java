@@ -1,125 +1,78 @@
 package com.example.EmpowerHer.model;
 
-public class UserObject{
+import com.google.firebase.database.IgnoreExtraProperties;
+
+@IgnoreExtraProperties
+public class UserObject {
 
 	private String psd;
 	private String gender;
-	private String school;
-	private String RegNo;
+
 	private String imageURL;
 	private String name;
 	private String id;
-	private boolean isAdmin;
-	private String userType;
-	private boolean userApproved;
+
 	private String email;
-	private String studentClass;
+	private String address;
 
 
 	public UserObject() {
 
 	}
-	public boolean isAdmin() {
-		return isAdmin;
-	}
 
-	public void setAdmin(boolean Admin) {
-		isAdmin = Admin;
-	}
-
-	public String getStudentClass() {
-		return studentClass;
-	}
-
-	public void setStudentClass(String StudentClass) {
-		this.studentClass = StudentClass;
-	}
-
-	public void setPsd(String Psd){
-		this.psd = Psd;
-	}
-
-	public String getPsd(){
+	public String getPsd() {
 		return psd;
 	}
 
-	public void setGender(String Gender){
-		this.gender = Gender;
+	public void setPsd(String psd) {
+		this.psd = psd;
 	}
 
-	public String getGender(){
+	public String getGender() {
 		return gender;
 	}
 
-	public void setSchool(String School){
-		this.school = School;
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
 
-	public String getSchool(){
-		return school;
-	}
-
-	public void setRegNo(String regNo){
-		this.RegNo = regNo;
-	}
-
-	public String getRegNo(){
-		return RegNo;
-	}
-
-	public void setImageURL(String ImageURL){
-		this.imageURL = ImageURL;
-	}
-
-	public String getImageURL(){
+	public String getImageURL() {
 		return imageURL;
 	}
 
-	public void setName(String Name){
-		this.name = Name;
+	public void setImageURL(String imageURL) {
+		this.imageURL = imageURL;
 	}
 
-	public String getName(){
+	public String getName() {
 		return name;
 	}
 
-	public void setId(String Id){
-		this.id = Id;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public String getId(){
+	public String getId() {
 		return id;
 	}
 
-	public void setIsAdmin(boolean IsAdmin){
-		this.isAdmin = IsAdmin;
+	public void setId(String id) {
+		this.id = id;
 	}
 
-	public boolean isIsAdmin(){
-		return isAdmin;
-	}
-
-	public void setUserType(String UserType){
-		this.userType = UserType;
-	}
-
-	public String getUserType(){
-		return userType;
-	}
-
-	public void setUserApproved(boolean UserApproved){
-		this.userApproved = UserApproved;
-	}
-
-	public boolean isUserApproved(){
-		return userApproved;
-	}
-
-	public void setEmail(String Email){
-		this.email = Email;
-	}
-
-	public String getEmail(){
+	public String getEmail() {
 		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
 	}
 }
