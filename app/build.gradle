@@ -1,0 +1,144 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\Amir-Sohail\\AndroidStudioProjects\\Univiristy-projects\\amir.jks')
+            storePassword 'pakistan'
+            keyAlias 'amir'
+            keyPassword 'pakistan'
+        }
+        relese {
+            storeFile file('C:\\Users\\Amir-Sohail\\AndroidStudioProjects\\Univiristy-projects\\key1-release.jks')
+            storePassword 'pakistan'
+            keyAlias 'amir'
+            keyPassword 'pakistan'
+        }
+    }
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.example.EmpowerHer"
+        minSdkVersion 22
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
+    }
+    ext {
+        appCompatVersion = '1.0.0'
+        designSupportVersion = '1.0.0'
+        recyclerViewVersion = '1.0.0'
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    aaptOptions {
+        cruncherEnabled = false
+    }
+
+    buildToolsVersion = '30.0.3'
+}
+allprojects {
+    repositories {
+        maven { url "https://maven.google.com" }
+        google()
+        jcenter()
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment:2.3.5'
+    implementation 'androidx.navigation:navigation-ui:2.3.5'
+    //Custom Toast
+    implementation 'com.github.GrenderG:Toasty:1.5.0'
+
+    //butterknife
+    implementation 'com.jakewharton:butterknife:10.2.3'
+
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+
+
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+
+    // Glide image loading library
+    implementation "com.github.bumptech.glide:glide:4.12.0"
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    //lottie
+    implementation 'com.airbnb.android:lottie:3.4.1'
+
+
+    //implementation 'com.jakewharton:butterknife:8.8.1'
+    //annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //nov
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "androidx.viewpager:viewpager:1.0.0"
+    implementation 'me.relex:circleindicator:1.2.2@aar'
+    implementation 'me.relex:circleindicator:1.2.2@aar'
+    implementation 'br.com.simplepass:loading-button-android:2.2.0'
+    implementation 'com.airbnb.android:lottie:3.4.1'
+
+    implementation 'androidx.recyclerview:recyclerview:1.2.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //firebase
+    implementation 'com.google.firebase:firebase-auth:20.0.4'
+    implementation 'com.google.firebase:firebase-core:18.0.3'
+    implementation 'com.google.firebase:firebase-database:19.7.0'
+    implementation 'com.firebaseui:firebase-ui-database:1.2.0'
+    implementation 'com.squareup.okhttp:okhttp:2.7.5'
+    implementation 'com.google.firebase:firebase-messaging:21.1.0'
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
+    implementation platform('com.google.firebase:firebase-bom:26.7.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-database:19.7.0'
+    implementation 'com.google.firebase:firebase-firestore:22.1.2'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    implementation 'com.google.firebase:firebase-storage:19.2.2'
+    //implementation 'com.firebaseui:firebase-ui-firestore:6.2.0'
+    implementation 'com.google.firebase:firebase-analytics:18.0.3'
+    // implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.firebase:firebase-auth:20.0.4'
+    implementation 'com.google.firebase:firebase-database:19.7.0'
+    implementation 'com.google.firebase:firebase-core:18.0.3'
+    implementation 'com.google.firebase:firebase-auth:20.0.4'
+
+    implementation platform('com.google.firebase:firebase-bom:27.1.0')
+
+    // Declare the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-auth'
+
+    implementation 'com.github.Shashank02051997:FancyWalkthrough-Android:2.1'
+
+}
+apply plugin: 'com.google.gms.google-services'

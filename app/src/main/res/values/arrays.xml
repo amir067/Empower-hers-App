@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="gender">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="institute">
+        <item>Select institute</item>
+        <item>COMSATS Sahiwal</item>
+        <item>COMSATS Lahore</item>
+    </string-array>
+
+    <string-array name="Class">
+        <item>Select Your Class</item>
+        <item>FA20-MCS</item>
+        <item>FA20-BSCS-S1</item>
+        <item>FA20-BSCS-S2</item>
+        <item>SP20-BSSE-S2</item>
+        <item>SP20-BCCS-S1</item>
+    </string-array>
+
+</resources>

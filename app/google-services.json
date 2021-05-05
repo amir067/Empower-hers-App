@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "177512634606",
+    "firebase_url": "https://empowerher-2-ffd04-default-rtdb.firebaseio.com",
+    "project_id": "empowerher-2-ffd04",
+    "storage_bucket": "empowerher-2-ffd04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177512634606:android:d3725b1dff305121c67bff",
+        "android_client_info": {
+          "package_name": "com.example.EmpowerHer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177512634606-de82rkfd729g1asppcloko8f3l3h65m2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApiOenWXKRpe7pSG1az-kUoG7iS0Q2BOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177512634606-de82rkfd729g1asppcloko8f3l3h65m2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

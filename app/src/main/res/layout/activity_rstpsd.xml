@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Edu_white"
+    tools:context=".ui.auth.ResetPsd">
+
+
+    <TextView
+        android:id="@+id/yv_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/metropolis_regular"
+        android:gravity="center"
+        android:text="Forgot Password?"
+        android:textAlignment="center"
+        android:textColor="@color/FDSignInC2"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <TextView
+        android:id="@+id/tv_sub_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/yv_tittle"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/latobold"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Write your Email we will send you code for verification to reset your password"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccentTx"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <EditText
+        android:id="@+id/editTextRsdpsd"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/tv_sub_tittle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/edge_border"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textColor="@color/GradientB2"
+        android:textColorHint="@color/colorAccentTx"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/editTextRsdpsdbtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextRsdpsd"
+        android:layout_alignStart="@+id/editTextRsdpsd"
+        android:layout_alignEnd="@+id/editTextRsdpsd"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_button_login_gradient_pink"
+        android:fontFamily="@font/font26"
+
+        android:foreground="@drawable/ripple_effect_white_bg_round"
+        android:padding="10dp"
+        android:text="Reset Password"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.663" />
+
+    <Button
+        android:id="@+id/btnrsdback"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextRsdpsdbtn"
+        android:layout_alignStart="@+id/editTextRsdpsdbtn"
+        android:layout_alignEnd="@+id/editTextRsdpsdbtn"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="-1dp"
+        android:background="@drawable/bg_button_login_gradient_pink"
+        android:fontFamily="@font/font26"
+        android:foreground="@drawable/ripple_effect_white_bg_round"
+        android:padding="10dp"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRsdpsdbtn"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginStart="411dp"
+        android:layout_marginTop="731dp"
+        android:layout_marginEnd="411dp"
+        android:layout_marginBottom="731dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_bg_foter" />
+
+
+</RelativeLayout>
