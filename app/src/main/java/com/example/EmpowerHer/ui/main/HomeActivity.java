@@ -24,6 +24,7 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.EmpowerHer.ui.Complains.ComplainActivity;
 import com.example.EmpowerHer.ui.Donation.DonationActivity;
 import com.example.EmpowerHer.ui.Education.EducationActivity;
+import com.example.EmpowerHer.ui.Feedback.FeedBackActivity;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -189,6 +190,12 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
         }if (id == R.id.nav_complains) {
             Intent profile = new Intent(HomeActivity.this, ComplainActivity.class);
+            startActivity(profile);
+            //startActivity(new Intent(this, PaymentActivity.class));
+            // Handle the camera action
+
+        }if (id == R.id.nav_feedback) {
+            Intent profile = new Intent(HomeActivity.this, FeedBackActivity.class);
             startActivity(profile);
             //startActivity(new Intent(this, PaymentActivity.class));
             // Handle the camera action

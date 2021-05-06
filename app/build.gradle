@@ -12,7 +12,7 @@ android {
         relese {
             storeFile file('C:\\Users\\Amir-Sohail\\AndroidStudioProjects\\Univiristy-projects\\key1-release.jks')
             storePassword 'pakistan'
-            keyAlias 'amir'
+            keyAlias 'key1'
             keyPassword 'pakistan'
         }
     }
@@ -24,7 +24,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        signingConfig signingConfigs.debug
+        signingConfig signingConfigs.relese
     }
     ext {
         appCompatVersion = '1.0.0'
@@ -140,5 +140,7 @@ dependencies {
 
     implementation 'com.github.Shashank02051997:FancyWalkthrough-Android:2.1'
 
+
+    implementation platform('com.google.firebase:firebase-bom:27.1.0')
 }
 apply plugin: 'com.google.gms.google-services'

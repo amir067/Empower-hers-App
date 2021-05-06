@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+     tools:context=".ui.Feedback.FeedBackActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Please write your feedback below." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/r_username_f"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_corner_red"
+                    android:cursorVisible="true"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:hint="Enter First Name"
+                    android:paddingStart="10dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/GradientB1"
+                    android:textSize="20dp"
+                    tools:ignore="DuplicateIds" />
+
+
+                <EditText
+                    android:id="@+id/r_username_last"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_corner_red"
+                    android:cursorVisible="true"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:hint="Last First Name"
+                    android:paddingStart="10dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/GradientB1"
+                    android:textSize="20dp"
+                    tools:ignore="DuplicateIds" />
+
+
+
+
+                <EditText
+                    android:id="@+id/r_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_corner_red"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/GradientB1"
+                    android:textSize="20dp" />
+
+
+
+
+                <EditText
+                    android:id="@+id/r_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_corner_red"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:hint="Enter Phone Number (03xxxxxxxxx)"
+                    android:inputType="number"
+                    android:paddingStart="10dp"
+                    android:maxLength="11"
+                    android:textColor="@color/GradientB1"
+                    android:textSize="20dp" />
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_corner_red"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:hint="Age"
+                    android:inputType="number"
+                    android:paddingStart="10dp"
+                    android:maxLength="11"
+                    android:textColor="@color/GradientB1"
+                    android:textSize="20dp" />
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_corner_red"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:hint="Message"
+                    android:inputType="text"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/GradientB1"
+                    android:textSize="20dp" />
+
+
+
+
+
+                <View
+
+                    android:layout_width="120dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="#222121" />
+
+
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:gravity="left"
+                    android:text="How's your experience?" />
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:text="Bad"
+                        android:layout_height="wrap_content">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:text="Average"
+                        android:layout_height="wrap_content">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:text="Good"
+                        android:layout_height="wrap_content">
+
+                    </RadioButton>
+
+                </RadioGroup>
+
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bt_rounded_corners_red"
+                    android:fontFamily="@font/montebold"
+                    app:backgroundTint="@color/Edu_colorAccent"
+                    android:foreground="@drawable/ripple_effect_white_bg"
+
+                    android:text="Register"
+                    android:textAllCaps="false"
+                    android:textColor="@color/amber_50"
+                    android:textSize="28dp"
+                    android:textStyle="normal" />
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="false"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="25dp"
+            android:fontFamily="@font/arlon_semi_bold"
+            android:gravity="center_horizontal"
+            android:text="FEE DBACK"
+            android:textColor="@color/FDSignInC2"
+            android:textSize="28dp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="120dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="#222121" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/ic_arrow_back"
+        app:tint="@android:color/black" />
+
+
+</FrameLayout>

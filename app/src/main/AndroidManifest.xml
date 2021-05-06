@@ -67,6 +67,7 @@
             android:parentActivityName=".ui.main.HomeActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".ui.Complains.ComplainActivity" />
+        <activity android:name=".ui.Feedback.FeedBackActivity" />
 
         <meta-data
             android:name="com.google.firebase.ml.vision.DEPENDENCIES"
